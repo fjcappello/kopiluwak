@@ -7,7 +7,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(/KopiLuwak/images/coffee-shop.jpg);
+    background-image: url(/src/assets/images/coffee-shop.jpg);
     background-repeat: no-repeat;
   }
 
