@@ -51,17 +51,41 @@
   
   .nav-list li {
     margin: 0 15px;
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
   }
   
   .nav-list li a {
     text-decoration: none;
     color: white;
   }
+.nav-list li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+  background-color: white;
+}
 
-.nav-list li a.active{
-  border-bottom: 2px solid white;
+.nav-list li:hover{
+  color: white;
 }
   
+.nav-list li:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.eslogan{
+  color: white;
+}
 
 .container{
   display: flex;
