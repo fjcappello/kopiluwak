@@ -120,6 +120,18 @@
     width: 40%; 
   }
 
+  .pie{
+    position: absolute;
+    padding: 10px 20px;
+    height: 3rem;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: var(--font-family);
+    color: white;
+    background-color: #a0694af4;
+  }
 
   .parent { 
     display: grid; 
@@ -152,3 +164,6 @@
     .div22 { grid-area: 11 / 2 / 12 / 3; } 
     .div23 { grid-area: 12 / 1 / 13 / 2; } 
     .div24 { grid-area: 12 / 2 / 13 / 3; } 
+
+
+  
