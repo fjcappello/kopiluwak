@@ -1,10 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto+Condensed&display=swap');
+
 :root{
   --font-family-roboto: 'Roboto Condensed', sans-serif;
   --font-family-titulo: 'Cedarville Cursive', cursive;
 }
-
 
 
   body {
@@ -138,6 +138,8 @@
     color: white;
     background-color: #a0694af4;
   }
+
+  /* Carta */
 
   .parent { 
     display: grid; 
