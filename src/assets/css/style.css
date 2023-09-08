@@ -126,18 +126,39 @@
     width: 40%; 
   }
 
-  .pie{
-    position: absolute;
+  .pie {
+    position: fixed;
     padding: 10px 20px;
-    height: 3rem;
-
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
     bottom: 0;
     left: 0;
     right: 0;
+    width: 98%;
     font-family: var(--font-family-roboto);
     color: white;
     background-color: #a0694af4;
   }
+  
+
+  .pie a {
+    text-decoration: underline; 
+    color: #ffffff; 
+  }
+
+  .redes ul {
+    color: #ffffff; 
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .preg a {
+    text-decoration: none;
+    list-style: none;
+  }
+
 
   /* Carta */
 
@@ -239,7 +260,6 @@
     color: white;
     font-family: var(--font-family-roboto);
     font-size: 20px;
-    /* pointer-events: none; */
     cursor: pointer;
   
   }
