@@ -49,8 +49,8 @@ Iniciar el servidor / Start the server
 ```
 
 ## Autorizaciones / Authorizations
-Uso de imagenes de seccion carta autorizada por caffedelpopolo /
-Use of menu section images authorized by caffedelpopolo
+Uso de imagenes de la seccion carta autorizada por caffedelpopolo /
+The use of images in the menu section has been authorized by caffedelpopolo
 
 - [@caffedelpopolo](https://www.instagram.com/caffedelpopolo/)
 
