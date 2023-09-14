@@ -51,6 +51,7 @@
     font-size: 20px;
     margin: 0;
     padding: 0;
+    margin-right: 10px;
   }
   
   .nav-list li {
@@ -102,7 +103,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: rgba(205, 205, 205, 0.653);
+  background-color: rgba(205, 205, 205, 0.932);
   padding: 20px;
   width: 50%;
   overflow: hidden;
@@ -139,6 +140,7 @@
     font-family: var(--font-family-roboto);
     color: white;
     background-color: #a0694af4;
+    text-decoration: none;
   }
   
 
@@ -151,6 +153,7 @@
     color: #ffffff; 
     text-decoration: none;
     list-style: none;
+    
   }
 
   .preg a {
@@ -168,16 +171,23 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px; 
     }
+
     .div1 { grid-area: 3 / 3 / 4 / 4; } 
     .div2 { grid-area: 3 / 4 / 4 / 5; } 
     .div3 { grid-area: 4 / 3 / 5 / 4; } 
     .div4 { grid-area: 4 / 4 / 5 / 5; } 
  
-
+    .parent img{
+      margin-top: 20px;
+      width: 120;
+      height: 105px;
+    }
     .parent div{
+      height: auto;
+      width: 500px;
       display: flex;
       justify-content: center;
-      background-color: rgba(205, 205, 205, 0.653);
+      background-color: rgba(205, 205, 205, 0.932);
       border-radius: 1rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
@@ -193,6 +203,20 @@
       padding: 20px;
       box-sizing: border-box;
     }
+
+    .pedir {
+      height: 60px;
+      width: 50px;
+      border-radius: 10px;
+      margin-top: 2.8rem;
+      font-family: var(--font-family-roboto);
+      font-size: 15px;
+      color: white;
+      background-color: #a0694ab2;
+
+    }
+
+    
 
 
 
