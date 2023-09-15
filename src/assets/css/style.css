@@ -14,7 +14,7 @@
     height: 100vh;
     margin: 0;
     background-image: url(/src/assets/images/coffee-shop.jpg);
-    background-repeat: no-repeat;
+    background-repeat:inherit;
   }
 .logo{
   font-family: var(--font-family-titulo);
@@ -172,7 +172,7 @@
     grid-row-gap: 10px; 
     }
 
-    .div1 { grid-area: 3 / 3 / 4 / 4; } 
+    .div1 { grid-area: 3 / 3 / 3 / 4; } 
     .div2 { grid-area: 3 / 4 / 4 / 5; } 
     .div3 { grid-area: 4 / 3 / 5 / 4; } 
     .div4 { grid-area: 4 / 4 / 5 / 5; } 
@@ -215,6 +215,31 @@
       background-color: #a0694ab2;
 
     }
+
+    
+button.carrito {
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-roboto);
+  font-size: medium;
+  height: 80px;
+  width: 90px;
+  position: fixed;
+  bottom: 10rem; 
+  right: 4rem; 
+  background-color: #a0694ab2; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999; 
+}
+
+
+
+button.carrito:hover {
+  background-color: #a0694afe; 
+}
 
     
 
