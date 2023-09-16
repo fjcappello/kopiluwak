@@ -21,25 +21,48 @@
 
       <section class="form-contact">
         <span class="textocontacto">
-            <h2 class="titulocontacto">Contacto</h2>
-            <p class="text">Envianos un mensaje con tu sugerencia, comentario o queja, <br>
-            esperamos hayas disfrutado de la experiencia KopiLuwak </p>
-        </span>
-        <form action="http://localhost:3000/contacto.html" class="contact" method="POST">
+          <h2 class="titulocontacto">Contacto</h2>
+          <p class="text">Envíanos un mensaje con tu sugerencia, comentario o queja,<br>esperamos hayas disfrutado de la experiencia KopiLuwak </p>
+      </span>
+      <form action="#" class="contact" method="POST" id="formularioContacto">
           <label for="nombres">Nombres</label>
           <input type="text" name="nombres" id="nombres" required>
-    
+  
           <label for="correo">Correo</label>
-          <input type="text" name="correo" id="correo" required>
-    
+          <input type="email" name="correo" id="correo" required>
+  
           <label for="mensaje">Mensaje</label>
           <textarea name="mensaje" id="mensaje"></textarea>
-          <input type="submit" value="Enviar" required>
+          <input type="submit" value="Enviar">
+      </form>
+  
+      <script>
+    const formularioContacto = document.getElementById('formularioContacto');
     
-    
-        </form>
+    formularioContacto.addEventListener('submit', function (e) {
+        e.preventDefault(); 
+        
+
+        const nombres = document.getElementById('nombres').value;
+        const correo = document.getElementById('correo').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+
+        const popupMensaje = `Nombres: ${nombres}\nCorreo: ${correo}\nMensaje: ${mensaje}\n\n Tu mensaje fue enviado con exito! \n Proximamente nos comunicaremos con vos!`;
+
+
+        const popupWindow = window.open('', 'Formulario Enviado', 'width=400,height=300');
+        popupWindow.document.write('<pre>' + popupMensaje + '</pre>');
+        popupWindow.focus();
+
+
+        formularioContacto.reset();
+    });
+      </script>
       </section>
 </body>
+
+
 <footer class="pie">
   <div class="copy">Desarrollado por Franco Cappello</div>
   <div class="redes">Redes
