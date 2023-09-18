@@ -50,10 +50,7 @@
 
         const popupMensaje = `Nombres: ${nombres}\nCorreo: ${correo}\nMensaje: ${mensaje}\n\n Tu mensaje fue enviado con exito! \n Proximamente nos comunicaremos con vos!`;
 
-
-        const popupWindow = window.open('', 'Formulario Enviado', 'width=400,height=300');
-        popupWindow.document.write('<pre>' + popupMensaje + '</pre>');
-        popupWindow.focus();
+        alert(popupMensaje);
 
 
         formularioContacto.reset();

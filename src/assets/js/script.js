@@ -20,7 +20,7 @@ botonOrdenar.addEventListener('click', () => {
   });
 
 
-  const meseros = ["Juan", "Maria", "Carlos", "Laura", "Pedro", "Ana", "Diego", "Carmen"];
+  const meseros = ["Juan", "Maria", "Laura", "Pedro", "Ana", "Diego", "Carmen","Carlos"];
   const nombreMesero = meseros[Math.floor(Math.random() * meseros.length)];
 
   if (productosPedidos.length > 0) {
