@@ -9,9 +9,7 @@
 
   body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  padding: 0;
     margin: 0;
     background-image: url(/src/assets/images/coffee-shop.jpg);
     background-repeat:inherit;
@@ -92,24 +90,22 @@
   color: white;
 }
 
+/* Index */
+
 .container{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transform: translate(50%, 100%);
   height: 100%;
   background-color: rgba(205, 205, 205, 0.932);
   padding: 20px;
   width: 50%;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 
 .info p {
   font-family: var(--font-family-roboto);
@@ -124,41 +120,6 @@
   .imageninfo {
     float: right; 
     width: 40%; 
-  }
-
-  .pie {
-    position: fixed;
-    padding: 10px 20px;
-    height: 6rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 98%;
-    font-family: var(--font-family-roboto);
-    color: white;
-    background-color: #a0694af4;
-    text-decoration: none;
-  }
-  
-
-  .pie a {
-    text-decoration: underline; 
-    color: #ffffff; 
-  }
-
-  .redes ul {
-    color: #ffffff; 
-    text-decoration: none;
-    list-style: none;
-    
-  }
-
-  .preg a {
-    text-decoration: none;
-    list-style: none;
   }
 
 
@@ -243,12 +204,10 @@ button.carrito:hover {
 
     
 
-
-
   /* Formulario Contacto */
 
- 
-  .form-contact {
+
+  .formulario{
     font-family: var(--font-family-roboto);
     display: flex;
     background: #FFF;
@@ -271,24 +230,31 @@ button.carrito:hover {
     padding: 20px;
   }
 
-
   .contact {
     padding: .8rem;
     overflow: hidden;
     color: gray;
   }
-  
+
+    
   .contact label, .contact input, .contact textarea {
     font-family: var(--font-family-roboto);
     display: block;
     width: 100%;
     margin-bottom: 5px;   
   }
-  
+
+  .contact label, .contact input, .contact textarea {
+    font-family: var(--font-family-roboto);
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;   
+  }
+ 
   .contact label {
     font-weight: 700;
   }
-  
+
   .contact input:not([type='submit']), .contact textarea {
     border: none;
     border-bottom: 2px solid #a0694ad1;
@@ -298,11 +264,11 @@ button.carrito:hover {
     outline: none;
     color: gray;
   }
-  
+
   .contact textarea {
     min-height: 100px;
   }
-  
+
   input[type='submit'] {
     padding: 10px;
     background: #a0694ad1;
@@ -312,4 +278,43 @@ button.carrito:hover {
     font-size: 20px;
     cursor: pointer;
   
+  }
+
+  /* Footer */
+
+  .pie {
+    position: fixed;
+    padding: 10px 20px;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 98%;
+    font-family: var(--font-family-roboto);
+    color: white;
+    background-color: #a0694af4;
+  }
+  
+
+  .pie a {
+    text-decoration: underline; 
+    color: #ffffff; 
+  }
+
+  .redes {
+    color: #ffffff; 
+    list-style: none;
+  }
+
+  .sitemap {
+    color: #ffffff; 
+    list-style: none;    
+  }
+
+  .preg a {
+    text-decoration: none;
+    list-style: none;
   }

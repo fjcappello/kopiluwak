@@ -51,3 +51,24 @@ botonesPedir.forEach((boton) => {
     alert(`Se ha agregado ${nombreProducto} al carrito.`);
   });
 });
+
+// Formulario de contacto
+
+const formularioContacto = document.getElementById('formularioContacto');
+    
+    formularioContacto.addEventListener('submit', function (e) {
+        e.preventDefault(); 
+        
+
+        const nombres = document.getElementById('nombres').value;
+        const correo = document.getElementById('correo').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+
+        const popupMensaje = `Nombres: ${nombres}\nCorreo: ${correo}\nMensaje: ${mensaje}\n\n Tu mensaje fue enviado con exito! \n Proximamente nos comunicaremos con vos!`;
+
+        alert(popupMensaje);
+
+
+        formularioContacto.reset();
+    });
