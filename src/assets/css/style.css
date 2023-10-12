@@ -126,18 +126,19 @@
   /* Carta */
 
   .parent { 
-    display: grid; 
-    grid-template-columns: repeat(6, 2fr); 
-    grid-template-rows: repeat(5, 3fr); 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 10px;
-    grid-row-gap: 10px; 
+    grid-row-gap: 10px;
     }
 
-    .div1 { grid-area: 3 / 3 / 3 / 4; } 
-    .div2 { grid-area: 3 / 4 / 4 / 5; } 
-    .div3 { grid-area: 4 / 3 / 5 / 4; } 
-    .div4 { grid-area: 4 / 4 / 5 / 5; } 
- 
+    .div1 { grid-area: 2 / 3 / 3 / 4; }
+    .div2 { grid-area: 2 / 4 / 3 / 5; }
+    .div3 { grid-area: 3 / 3 / 4 / 4; }
+    .div4 { grid-area: 3 / 4 / 4 / 5; }
+
+
     .parent img{
       margin-top: 20px;
       width: 120;
@@ -305,8 +306,14 @@ button.carrito:hover {
   }
 
   .redes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
     color: #ffffff; 
     list-style: none;
+
   }
 
   .sitemap {
