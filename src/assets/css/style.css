@@ -9,10 +9,12 @@
 
   body {
     display: flex;
-  padding: 0;
+    position: fixed;
+    padding: 0;
     margin: 0;
     background-image: url(/src/assets/images/coffee-shop.jpg);
     background-repeat:inherit;
+
   }
 .logo{
   font-family: var(--font-family-titulo);
@@ -64,18 +66,19 @@
     text-decoration: none;
     color: white;
   }
-.nav-list li::after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  top: 100%;
-  left: 0;
-  transition: transform 0.5s;
-  transform: scaleX(0);
-  transform-origin: right;
-  background-color: white;
-}
+  
+  .nav-list li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: white;
+  }
 
 .nav-list li:hover{
   color: white;
@@ -179,29 +182,29 @@
     }
 
     
-button.carrito {
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-family-roboto);
-  font-size: medium;
-  height: 80px;
-  width: 90px;
-  position: fixed;
-  bottom: 10rem; 
-  right: 4rem; 
-  background-color: #a0694ab2; 
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 999; 
-}
+    button.carrito {
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-family-roboto);
+      font-size: medium;
+      height: 80px;
+      width: 90px;
+      position: fixed;
+      bottom: 10rem; 
+      right: 4rem; 
+      background-color: #a0694ab2; 
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 999; 
+    }
 
 
 
-button.carrito:hover {
-  background-color: #a0694afe; 
-}
+    button.carrito:hover {
+      background-color: #a0694afe; 
+    }
 
     
 
@@ -217,7 +220,7 @@ button.carrito:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(90%, 24%);
     box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
   }
 
