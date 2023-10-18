@@ -20,7 +20,7 @@
   font-family: var(--font-family-titulo);
   
 }
-  .navbar {
+  .navegacion {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -220,7 +220,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(90%, 24%);
+    transform: translate(90%, 27%);
     box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
   }
 
