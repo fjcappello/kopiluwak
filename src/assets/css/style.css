@@ -1,8 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto+Condensed&display=swap');
 
-
-:root{
+:root {
   --font-family-roboto: 'Roboto Condensed', sans-serif;
   --font-family-titulo: 'Cedarville Cursive', cursive;
 }
@@ -16,37 +14,34 @@ body {
   background-image: url(/src/assets/images/coffee-shop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fff; 
+  background-color: #fff;
   min-height: 100vh;
   font-family: var(--font-family-roboto);
-  color: #333; 
-  font-size: 16px; 
-  max-width: 100%; 
+  color: #333;
+  font-size: 16px;
+  max-width: 100%;
 }
 
-  @media (max-width: 768px) {
-    body {
-      max-width: 100%; 
-    } 
+@media (max-width: 768px) {
+  body {
+    max-width: 100%;
   }
+}
 
-
-/* *************************************************************************************************************************
-*************************************************** NAVBAR *****************************************************************
-************************************************************************************************************************** */
 header {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%; 
+  width: 100%;
 }
+
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Mover la barra de navegación al lado derecho y el logo al lado izquierdo */
   align-items: center;
   font-family: var(--font-family-roboto);
-  width: 100%; 
+  width: 100%;
   height: 10vh;
   position: fixed;
   top: 0;
@@ -56,74 +51,67 @@ header {
   z-index: 999;
 }
 
-  
-  .nav__logo{
-    display: flex;
-    align-items: center;
-    font-family: var(--font-family-titulo);
-  }
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
 
-  .nav__logo img {
-    height: 3.75rem ;
-    margin-right: 0.625rem; 
-  }
-  
-  .nav__navbar--lista {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    margin-right: 10px;
-  }
-  
-  .nav__navbar--lista li {
-    margin: 0 15px;
-    position: relative;
-    display: block;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  
-  .nav__navbar--lista li a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .nav__navbar--lista li::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    top: 100%;
-    left: 0;
-    transition: transform 0.5s;
-    transform: scaleX(0);
-    transform-origin: right;
-    background-color: white;
-  }
+.nav__logo img {
+  height: 3.75rem;
+  margin-right: 0.625rem;
+}
 
-.nav__navbar--lista li:hover{
+.nav__navbar--lista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.nav__navbar--lista li {
+  margin: 0 15px;
+  position: relative;
+  display: block;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav__navbar--lista li a {
+  text-decoration: none;
   color: white;
 }
-  
-.nav__navbar--lista li:hover::after{
+
+.nav__navbar--lista li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+  background-color: white;
+}
+
+.nav__navbar--lista li:hover {
+  color: white;
+}
+
+.nav__navbar--lista li:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.nav__eslogan{
+.nav__eslogan {
+  font-family: var(--font-family-titulo);
+  font-size: 25px;
   color: white;
 }
-
-
-
-/* *************************************************************************************************************************
-*************************************************** FOOTER *****************************************************************
-************************************************************************************************************************** */
-
 
 .pie {
   position: fixed;
@@ -141,10 +129,9 @@ header {
   background-color: #a0694af4;
 }
 
-
 .pie a {
-  text-decoration: underline; 
-  color: #ffffff; 
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 .pie__redes {
@@ -170,10 +157,9 @@ header {
   text-decoration: none;
 }
 
-
 .pie__sitemap {
-  color: #ffffff; 
-  list-style: none;    
+  color: #ffffff;
+  list-style: none;
 }
 
 .pie__preg a {
@@ -181,27 +167,22 @@ header {
   list-style: none;
 }
 
-
-/* *************************************************************************************************************************
-*************************************************** INDEX *****************************************************************
-************************************************************************************************************************** */
-
 .contenedor__index {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   height: 50vh;
   background-color: rgba(205, 205, 205, 0.932);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  max-width: 800px; 
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .contenedor__index--info {
   display: flex;
-  flex-direction: row; 
-  justify-content: space-between; 
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   border-radius: 10px;
@@ -222,165 +203,149 @@ header {
   border-radius: 10px;
 }
 
-
-/* *************************************************************************************************************************
-*************************************************** CARTA *****************************************************************
-************************************************************************************************************************** */
-
 .carta {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  grid-template-rows: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .carta__div1,
 .carta__div2,
 .carta__div3,
 .carta__div4 {
-  height: 50vh; 
+  height: 50vh;
 }
 
-    .carta img{
-      margin-top: 20px;
-      width: 120;
-      height: 105px;
-    }
-    .carta div{
-      height: auto;
-      width: 500px;
-      display: flex;
-      justify-content: center;
-      background-color: rgba(205, 205, 205, 0.932);
-      border-radius: 1rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.carta img {
+  margin-top: 20px;
+  width: 120;
+  height: 105px;
+}
+.carta div {
+  height: auto;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(205, 205, 205, 0.932);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
-    }
+.carta p {
+  font-family: var(--font-family-roboto);
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  float: left;
+  width: 60%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-    .carta p{
-      font-family: var(--font-family-roboto);
-      color: white;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      font-size: 20px; 
-      float: left; 
-      width: 60%; 
-      padding: 20px;
-      box-sizing: border-box;
-    }
+.carta__pedir {
+  height: 60px;
+  width: 50px;
+  border-radius: 10px;
+  margin-top: 2.8rem;
+  font-family: var(--font-family-roboto);
+  font-size: 15px;
+  color: white;
+  background-color: #a0694ab2;
+}
 
-    .carta__pedir {
-      height: 60px;
-      width: 50px;
-      border-radius: 10px;
-      margin-top: 2.8rem;
-      font-family: var(--font-family-roboto);
-      font-size: 15px;
-      color: white;
-      background-color: #a0694ab2;
+button.carta__carrito {
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-roboto);
+  font-size: medium;
+  height: 80px;
+  width: 90px;
+  position: fixed;
+  bottom: 10rem;
+  right: 4rem;
+  background-color: #a0694ab2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
 
-    }
+button.carta__carrito:hover {
+  background-color: #a0694afe;
+}
 
-    
-    button.carta__carrito {
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-family-roboto);
-      font-size: medium;
-      height: 80px;
-      width: 90px;
-      position: fixed;
-      bottom: 10rem; 
-      right: 4rem; 
-      background-color: #a0694ab2; 
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      z-index: 999; 
-    }
+.formulario__padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
 
+.formulario {
+  text-align: center;
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+  max-width: 600px;
+  padding: 20px;
+  height: 450px;
+  width: 500px;
+}
 
+.formulario__titulo {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0;
+}
 
-    button.carta__carrito:hover {
-      background-color: #a0694afe; 
-    }
+.formulario__texto {
+  margin-top: 0.5em;
+}
 
-    
-    /* *************************************************************************************************************************
-    *************************************************** FORMULARIO ************************************************************
-    ************************************************** DE CONTACTO *************************************************************
-    **************************************************************************************************************************** */
-    .formulario__padre {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 30vh;
-    }
-    
-    .formulario {
-      text-align: center;
-      background: #FFF;
-      border-radius: 3px;
-      box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
-      max-width: 600px; 
-      padding: 20px;
-      height: 450px ;
-      width: 500px; 
-    }
-    
-    .formulario__titulo {
-      font-size: 24px;
-      text-align: center;
-      margin-top: 0;
-    }
-    
-    .formulario__texto {
-      margin-top: 0.5em;
-    }
-    
-    
+.formulario__contacto {
+  padding: .8rem;
+  overflow: hidden;
+  color: gray;
+}
 
-    .formulario__contacto {
-      padding: .8rem;
-      overflow: hidden;
-      color: gray;
-    }
+.formulario__contacto label,
+.formulario__contacto input,
+textarea {
+  font-family: var(--font-family-roboto);
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
 
-      
-    .formulario__contacto label, input, textarea {
-      font-family: var(--font-family-roboto);
-      display: block;
-      width: 100%;
-      margin-bottom: 5px;   
-    }
-  
-    .formulario__contacto label {
-      font-weight: 700;
-    }
+.formulario__contacto label {
+  font-weight: 700;
+}
 
-    .formulario__contacto input:not([type='submit']), textarea {
-      border: none;
-      border-bottom: 2px solid #a0694ad1;
-      margin-bottom: 10px;
-      font-family: var(--font-family-roboto);
-      font-size: 20px;
-      outline: none;
-      color: gray;
-    }
+.formulario__contacto input:not([type='submit']),
+textarea {
+  border: none;
+  border-bottom: 2px solid #a0694ad1;
+  margin-bottom: 10px;
+  font-family: var(--font-family-roboto);
+  font-size: 20px;
+  outline: none;
+  color: gray;
+}
 
-    .formulario__contacto textarea {
-      min-height: 100px;
-    }
+.formulario__contacto textarea {
+  min-height: 100px;
+}
 
-    input[type='submit'] {
-      padding: 10px;
-      background: #a0694ad1;
-      border: none;
-      color: white;
-      font-family: var(--font-family-roboto);
-      font-size: 20px;
-      cursor: pointer;
-    
-    }
+input[type='submit'] {
+  padding: 10px;
+  background: #a0694ad1;
+  border: none;
+  color: white;
+  font-family: var(--font-family-roboto);
+  font-size: 20px;
+  cursor: pointer;
+}
