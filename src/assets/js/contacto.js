@@ -9,7 +9,7 @@ formularioContacto.addEventListener('submit', function (e) {
     const mensaje = document.getElementById('mensaje').value;
 
 
-    const popupMensaje = `Tu nombre: ${nombres}\nTu correo: ${correo}\nTu mensaje: ${mensaje}\n\n El mensaje fue enviado con exito! \n Proximamente nos comunicaremos con vos!`;
+    const popupMensaje = `Tu nombre: ${nombres}\nTu correo: ${correo}\nTu mensaje:\n${mensaje}\n\n El mensaje fue enviado con exito! \n Proximamente nos comunicaremos con vos!`;
 
     alert(popupMensaje);
 
