@@ -210,8 +210,9 @@ header {
 
 .contenedor__index--info p {
   font-family: var(--font-family-roboto);
-  color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #000;
+  /* color: #FFF; */
+ /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
   font-size: 25px;
   width: 60%;
   padding: 20px;
@@ -262,8 +263,9 @@ header {
 
 .carta p {
   font-family: var(--font-family-roboto);
-  color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #000;
+  /* color: #FFF; */
+ /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
   font-size: 20px;
   float: left;
   width: 60%;
