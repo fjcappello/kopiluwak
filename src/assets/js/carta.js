@@ -2,16 +2,16 @@
 // Script para el carrito de pedidos
 
 
-const botonOrdenar = document.querySelector('.carrito');
+const botonOrdenar = document.querySelector('.carta__carrito');
 botonOrdenar.addEventListener('click', () => {
 
   const productosPedidos = [];
 
 
-  const botonesPedir = document.querySelectorAll('.pedir');
+  const botonPedir = document.querySelectorAll('.carta__pedir');
 
 
-  botonesPedir.forEach((boton) => {
+  botonPedir.forEach((boton) => {
 
     if (boton.classList.contains('agregado')) {
       const nombreProducto = boton.getAttribute('data-nombre');
@@ -31,7 +31,7 @@ botonOrdenar.addEventListener('click', () => {
     alert(mensaje);
 
 
-    botonesPedir.forEach((boton) => {
+    botonPedir.forEach((boton) => {
       boton.classList.remove('agregado');
     });
   } else {
@@ -41,8 +41,8 @@ botonOrdenar.addEventListener('click', () => {
 
 // Notificaciones de productos agregados a la orden
 
-const botonesPedir = document.querySelectorAll('.pedir');
-botonesPedir.forEach((boton) => {
+const botonPedir = document.querySelectorAll('.carta__pedir');
+botonPedir.forEach((boton) => {
   boton.addEventListener('click', () => {
 
     boton.classList.add('agregado');
@@ -52,23 +52,3 @@ botonesPedir.forEach((boton) => {
   });
 });
 
-// Formulario de contacto
-
-const formularioContacto = document.getElementById('formularioContacto');
-    
-    formularioContacto.addEventListener('submit', function (e) {
-        e.preventDefault(); 
-        
-
-        const nombres = document.getElementById('nombres').value;
-        const correo = document.getElementById('correo').value;
-        const mensaje = document.getElementById('mensaje').value;
-
-
-        const popupMensaje = `Nombres: ${nombres}\nCorreo: ${correo}\nMensaje: ${mensaje}\n\n Tu mensaje fue enviado con exito! \n Proximamente nos comunicaremos con vos!`;
-
-        alert(popupMensaje);
-
-
-        formularioContacto.reset();
-    });
