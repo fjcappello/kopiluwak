@@ -1,5 +1,5 @@
 
-// Script para el carrito de pedidos
+// Carrito de pedidos
 
 
 const botonOrdenar = document.querySelector('.carta__carrito');
@@ -20,7 +20,7 @@ botonOrdenar.addEventListener('click', () => {
   });
 
 
-  const meseros = ["Juan", "Maria", "Laura", "Pedro", "Ana", "Diego", "Carmen","Carlos"];
+  const meseros = ["Juan", "Maria", "Laura", "Pedro", "Ana", "Diego", "Araceli","Carlos"];
   const nombreMesero = meseros[Math.floor(Math.random() * meseros.length)];
 
   if (productosPedidos.length > 0) {
