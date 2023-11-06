@@ -1,3 +1,6 @@
+// Renderizado de la carta
+
+// Inclurir codigo js
 
 // Carrito de pedidos
 
