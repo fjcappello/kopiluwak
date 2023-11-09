@@ -20,12 +20,12 @@ botonOrdenar.addEventListener('click', () => {
   });
 
 
-  const meseros = ["Juan", "Maria", "Laura", "Pedro", "Ana", "Diego", "Araceli","Carlos"];
-  const nombreMesero = meseros[Math.floor(Math.random() * meseros.length)];
+  const mozo = ["Juan", "Maria", "Laura", "Pedro", "Ana", "Diego", "Araceli","Carlos"];
+  const nombreMozo = mozo[Math.floor(Math.random() * mozo.length)];
 
   if (productosPedidos.length > 0) {
 
-    const mensaje = `Su orden:\n${productosPedidos.join('\n')}\n\nHa sido enviada al mozo.\nSu mozo hoy es ${nombreMesero}.`;
+    const mensaje = `Su orden:\n${productosPedidos.join('\n')}\n\nHa sido enviada al mozo.\nSu mozo hoy es ${nombreMozo}.`;
 
 
     alert(mensaje);
