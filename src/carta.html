@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/assets/css/style.css">
     <title>KopiLuwak Cafeterias</title>
+    <script type="module" src="./assets/js/render_carta.js" ></script>
+    <script src="/src/assets/js/botones_carta.js" defer></script>
 </head>
   <header>
     <div class="nav">
@@ -22,27 +24,15 @@
     </div>
   </header>
 <body>
-    <div class="carta"> 
-      <div class="carta__div1">
-        <button class="carta__pedir" data-nombre="Cafe Americano"="">Pedir</button>
-        <p>Clasico Americano, un shot de cafe con agua para arrancar tus mañanas</p>
-        <img src="/src/assets/images/cafe/Americano.png" alt="Cafe Americano">
-      </div> 
-      <div class="carta__div2">
-        <img src="/src/assets/images/cafe/Latte.png" alt="Cafe Latte">
-        <p>Un latte para reflexionar en un mundo de incognitas. Opcional leches vegetales</p>
-        <button class="carta__pedir" data-nombre="Cafe Latte">Pedir</button>
-         </div> 
-      <div class="carta__div3">
-        <button class="carta__pedir" data-nombre="Capuccino">Pedir</button>
-        <p>Un capuccino para los que quieren un poco mas de espuma en su vida</p>
-        <img src="/src/assets/images/cafe/Capuccino.png" alt="Capuccino">
-         </div> 
-      <div class="carta__div4">
-        <img src="/src/assets/images/cafe/Caramel.png" alt="Caramel">
-        <p>Un delicioso Caramel Latte, para endulzar tu mañana con cafe y caramelo </p>
-        <button class="carta__pedir" data-nombre="Caramel Latte">Pedir</button>
-      </div> 
+  
+    <div class="carta" id="carta">
+
+      <div>
+        <button class="carta__pedir" data-nombre=""></button>
+        <p></p>
+        <img src="" alt="">
+      </div>
+
       </div>
       <button class="carta__carrito"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coffee" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -52,8 +42,6 @@
         <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
         <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
       </svg>Ordernar</button>
-      
-<script src="/src/assets/js/carta.js" defer></script>
 
 </body>
 <footer class="pie">
