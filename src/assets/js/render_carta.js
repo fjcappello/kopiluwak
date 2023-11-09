@@ -13,5 +13,21 @@ fetch("./productos.json").then((datos)=>{
                                     
         })
         carta.innerHTML = contenido
+        
+        
+        // Funcionamiento botones de la carta
+
+        const botonPedir = document.querySelectorAll('[data-nombre]');
+        botonPedir.forEach((boton) =>{
+            boton.addEventListener('click', () => {
+                boton.classList.add('agregado');
+                const nombreProducto = boton.getAttribute('data-nombre');
+                alert(`Se ha agregado ${nombreProducto} al carrito.`);
+            });
+        }
+
+
+
+        )
     })
 })
