@@ -27,6 +27,40 @@ Additionally, there is a footer on each page that contains information about the
 
 The entire website has been built using HTML and CSS to establish an visually appealing and informative online presence for the café. In addition, JavaScript scripts have been added to enable the functionality of the contact form and order buttons.
 
+## Estructura de carpetas / Markdown Structure
+
+```
+└── 📁kopiluwak
+    └── package-lock.json
+    └── package.json
+    └── 📁src
+        └── KopiLuwak - Wireframe.pdf
+        └── README.md
+        └── 📁assets
+            └── 📁css
+                └── style.css
+            └── 📁images
+                └── 📁cafe
+                    └── Americano.png
+                    └── Capuccino.png
+                    └── Caramel.png
+                    └── Latte.png
+                └── cafe_especialidad.jpeg
+                └── coffee-shop.jpg
+                └── github.png
+                └── linkedin.png
+                └── vecteezy_hot-coffee-cup-png-file_10171329_872.png
+            └── 📁js
+                └── botones_carta.js
+                └── contacto.js
+                └── render_carta.js
+        └── carta.html
+        └── contacto.html
+        └── easteregg.html
+        └── index.html
+        └── productos.json
+```
+
 
 ## Setup del proyecto / Project Setup
 
