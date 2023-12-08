@@ -1,4 +1,4 @@
-fetch("./productos.json").then((datos)=>{
+fetch("/src/assets/json/productos.json").then((datos)=>{
     datos.json().then((productos)=>{
         const carta = document.getElementById("carta");
         let contenido = "";
@@ -6,6 +6,7 @@ fetch("./productos.json").then((datos)=>{
             (producto) => {
             contenido += ` <div>
                             <button class="carta__pedir" data-nombre="${producto.nombre}">${producto.button}</button>
+                            <h2 class="carta__nombre">${producto.nombre}</h2>
                             <p>${producto.descripcion}</p>
                             <img src="${producto.imagen}" alt="">
                             </div>`

@@ -234,7 +234,7 @@ header {
 */
 
 .carta {
-  display: grid;
+  display: grid; 
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 10px;
@@ -267,13 +267,20 @@ header {
 .carta p {
   font-family: var(--font-family-roboto);
   color: #000;
-  /* color: #FFF; */
- /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
   font-size: 20px;
   float: left;
   width: 60%;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.carta__nombre{
+  font-family: var(--font-family-roboto);
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+
 }
 
 .carta__pedir {
