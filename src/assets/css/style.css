@@ -3,6 +3,9 @@
 :root {
   --font-family-roboto: 'Roboto Condensed', sans-serif;
   --font-family-titulo: 'Cedarville Cursive', cursive;
+
+  font-family: var(--font-family-roboto);
+  font-size: 18px; 
 }
 
 body {
@@ -240,6 +243,8 @@ header {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   max-width: 100%;
+  justify-content: center; 
+  flex-direction: row; 
 }
 
 .carta__div1,
@@ -258,7 +263,6 @@ header {
   height: auto;
   width: 500px;
   display: flex;
-  justify-content: center;
   background-color: rgba(205, 205, 205, 0.932);
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -268,19 +272,20 @@ header {
   font-family: var(--font-family-roboto);
   color: #000;
   font-size: 20px;
-  float: left;
-  width: 60%;
+  flex-grow: 1; 
   padding: 20px;
   box-sizing: border-box;
 }
 
 .carta__nombre{
   font-family: var(--font-family-roboto);
-  font-size: 25px;
+  font-size: 20px;
   color: #000;
   text-align: center;
   margin-top: 10px;
-
+  margin-right: 30px; 
+  justify-content: center; 
+  flex-direction: row; 
 }
 
 .carta__pedir {
@@ -315,6 +320,7 @@ button.carta__carrito {
 button.carta__carrito:hover {
   background-color: #a0694afe;
 }
+
 
 /*
 ************************************************************************************************************************************************************
