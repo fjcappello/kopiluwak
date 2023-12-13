@@ -54,14 +54,14 @@ The entire website has been built using HTML and CSS to establish an visually ap
                 └── botones_carta.js
                 └── contacto.js
                 └── render_carta.js
+            └── 📁json
+                └── productos.json
         └── carta.html
         └── contacto.html
         └── easteregg.html
         └── index.html
-        └── productos.json
 ```
-
-
+```
 ## Setup del proyecto / Project Setup
 
 Clonar el proyecto / Clone the project
