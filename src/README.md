@@ -11,7 +11,7 @@ Página de Contacto: Esta página proporciona información de contacto para la c
 
 Además, hay un pie de página en cada página que contiene información sobre el desarrollador del sitio web.
 
-El sitio web completo ha sido desarrollado utilizando HTML y CSS con el objetivo de establecer una presencia en línea atractiva y informativa para la cafetería. Además, se han incorporado scripts en JavaScript para habilitar la funcionalidad del formulario de contacto y los botones de pedidos.
+El sitio web completo ha sido desarrollado utilizando HTML y CSS con el objetivo de establecer una presencia en línea atractiva y informativa para la cafetería. Además, se han incorporado scripts en JavaScript para habilitar la funcionalidad del formulario de contacto, los botones de pedidos y el renderizado del menu.
 
 - - -
 
@@ -25,7 +25,7 @@ Contact Page: This page provides contact information for the cafeteria.
 
 Additionally, there is a footer on each page that contains information about the developer of the website.
 
-The entire website has been built using HTML and CSS to establish an visually appealing and informative online presence for the café. In addition, JavaScript scripts have been added to enable the functionality of the contact form and order buttons.
+The entire website has been built using HTML and CSS to establish an visually appealing and informative online presence for the café. In addition, JavaScript scripts have been added to enable the functionality of the contact form, order buttons and the menu render from a JSON file.
 
 ## Estructura de carpetas / Markdown Structure
 
