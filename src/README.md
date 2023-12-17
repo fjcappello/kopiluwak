@@ -11,7 +11,7 @@ Página de Contacto: Esta página proporciona información de contacto para la c
 
 Además, hay un pie de página en cada página que contiene información sobre el desarrollador del sitio web.
 
-El sitio web completo ha sido desarrollado utilizando HTML y CSS con el objetivo de establecer una presencia en línea atractiva y informativa para la cafetería. Además, se han incorporado scripts en JavaScript para habilitar la funcionalidad del formulario de contacto, los botones de pedidos y el renderizado del menu.
+El sitio web completo ha sido desarrollado utilizando HTML y CSS con el objetivo de establecer una presencia en línea atractiva e informativa para la cafetería. Además, se han incorporado scripts en JavaScript para habilitar la funcionalidad del formulario de contacto, los botones de pedidos y el renderizado del menu.
 
 - - -
 
@@ -62,7 +62,8 @@ The entire website has been built using HTML and CSS to establish an visually ap
         └── index.html
 ```
 ```
-## Setup del proyecto / Project Setup
+
+Setup del proyecto / Project Setup
 
 Clonar el proyecto / Clone the project
 
